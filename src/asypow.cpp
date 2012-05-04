@@ -35,11 +35,6 @@ public:
     Rcpp::NumericVector p,z;
     bool exactvar;
 
-    Asypow() {
-        setValue(100,0.1,1,2,log(2.0),0.05,Rcpp::NumericVector::create(0.9025, 0.0950, 0.0025), 0.01, 
-                                         Rcpp::NumericVector::create(0,1,2), false);
-    }
-
     Asypow(double _n, double _theta, double _a, double _b, double _lambda0, double _q, 
            Rcpp::NumericVector _p, double _alpha, Rcpp::NumericVector _z, bool _exactvar)
     : n(_n), theta(_theta), a(_a), b(_b), lambda0(_lambda0), q(_q), p(_p), alpha(_alpha), z(_z), exactvar(_exactvar)

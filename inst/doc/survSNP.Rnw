@@ -91,10 +91,10 @@ These are denoted by the variable names
 {\tt GHRs}, {\tt ns}, {\tt rafs} and {\tt erates}
 in this example.
 <<ex1setup>>=
-GHRs<-seq(1,1.5,by=0.05)
+GHRs<-seq(1.05,1.5,by=0.05)
 ns<-c(100,500,700)
 rafs<-c(0.1,0.3,0.5)
-erates=c(0.5,0.7,0.9)
+erates<-c(0.5,0.7,0.9)
 @ 
 The function {\tt survSNP.power.table} can be used to generate
 power calculations for this combination of paramaters. This is

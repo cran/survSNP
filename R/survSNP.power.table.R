@@ -1,6 +1,7 @@
 survSNP.power.table <-
 function(GHRs,ns,rafs,erates,pilm,lm,model,test,alpha,exactvar=FALSE,B=0,para=FALSE)
   {
+    grr<-raf<-n<-erate<-NULL
     res=foreach(grr=GHRs,.combine=rbind)%:%
       foreach(raf=rafs,.combine=rbind)%:%
         foreach(n=ns,.combine=rbind)%:%

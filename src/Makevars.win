@@ -1,3 +1,8 @@
+# Makevars file per Dirk Eddelbuettel's suggestion (kindly provided on 05/03/2012)
 
-## Use the R_HOME indirection to support installations of multiple R version
-PKG_LIBS = $(shell "${R_HOME}/bin${R_ARCH_BIN}/Rscript.exe" -e "Rcpp:::LdFlags()") -lgsl
+## This assumes that the LIB_GSL variable points to working GSL libraries
+## It also assume that we can call Rscript to ask Rcpp about its locations
+PKG_CPPFLAGS=-std=c++0x -Wall -pedantic -I$(LIB_GSL)/include $(shell $(R_HOME)/bin/Rscript.exe -e "Rcpp:::CxxFlags()")
+PKG_LIBS=-L$(LIB_GSL)/lib -lgsl -lgslcblas $(shell $(R_HOME)/bin/Rscript.exe -e "Rcpp:::LdFlags()")
+
+
