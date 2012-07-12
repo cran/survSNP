@@ -6,7 +6,7 @@
 ## Licensed under GNU GPL 2 or later
 
 # The version set here will propagate to other files from here
-AC_INIT([survSNP], 0.21.3)
+AC_INIT([survSNP], 0.21-5)
 
 # Checks for common programs using default macros
 AC_PROG_CC

@@ -37,7 +37,7 @@ public:
 
     Asypow(double _n, double _theta, double _a, double _b, double _lambda0, double _q, 
            Rcpp::NumericVector _p, double _alpha, Rcpp::NumericVector _z, bool _exactvar)
-    : n(_n), theta(_theta), a(_a), b(_b), lambda0(_lambda0), q(_q), p(_p), alpha(_alpha), z(_z), exactvar(_exactvar)
+    : n(_n), theta(_theta), a(_a), b(_b), lambda0(_lambda0), q(_q), alpha(_alpha), p(_p), z(_z), exactvar(_exactvar)
     {}
 
     void setValue(double _n, double _theta, double _a, double _b, double _lambda0, double _q,

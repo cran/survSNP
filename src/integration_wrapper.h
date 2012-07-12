@@ -3,12 +3,17 @@
 
 #include <gsl/gsl_integration.h>
 
+#define INTEG_INTERVALNUM 1000
+#define INTEG_ALPHA 1.0
+#define INTEG_EPSABS 0
+#define INTEG_EPSREL 1e-7
+
 typedef  double (*FUNCX)(double x);
 FUNCX funcx;
 double funcForIntegration(double x, void * params) {
     double alpha = *(double *) params;
     return funcx(alpha*x);
-};
+}
 class GslIntegration
 {
 public:
@@ -24,9 +29,9 @@ public:
     }
 
     GslIntegration() {
-        w = gsl_integration_workspace_alloc (1000);
+        w = gsl_integration_workspace_alloc (INTEG_INTERVALNUM);
         gslFunc.function = &funcForIntegration;
-        alpha = 1.0;
+        alpha = INTEG_ALPHA;
         gslFunc.params = &alpha;
     }
 
@@ -36,7 +41,7 @@ public:
 
     double integration(FUNCX f, double a, double b) {
         funcx=f;
-        gsl_integration_qags (&gslFunc, a, b, 0, 1e-7, 1000,
+        gsl_integration_qags (&gslFunc, a, b, INTEG_EPSABS, INTEG_EPSREL, INTEG_INTERVALNUM,
                               w, &result, &error); 
         return result;
     }
