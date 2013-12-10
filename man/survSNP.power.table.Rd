@@ -10,7 +10,8 @@
   sample sizes, em
 }
 \usage{
-survSNP.power.table(GHRs, ns, rafs, erates, pilm, lm, model, test, alpha, exactvar = FALSE, B = 0, para = FALSE)
+survSNP.power.table(GHRs, ns, rafs, erates, pilm, lm, model, test, alpha, 
+                    exactvar = FALSE, B = 0, para = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -82,7 +83,8 @@ GRRs<-seq(1.5,2,by=0.25)
 ns<-c(100,500,1000)
 rafs<-c(0.3,0.5,0.7)
 erates=c(0.5,0.7,0.9)
-res<-survSNP.power.table(GRRs,ns,rafs,erates,pilm=0.5,lm=1,model="additive",test="additive",alpha=0.05)
+res<-survSNP.power.table(GRRs,ns,rafs,erates,pilm=0.5,lm=1,model="additive",
+                         test="additive",alpha=0.05)
 
 # Create key for illustration
 KEY=paste("q=",levels(factor(res$raf)),sep="")

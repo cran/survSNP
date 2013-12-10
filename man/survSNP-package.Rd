@@ -15,8 +15,8 @@ Studies with Censored Time-to-Event Outcomes
 \tabular{ll}{
 Package: \tab survSNP\cr
 Type: \tab Package\cr
-Version: \tab 0.21-5\cr
-Date: \tab 2012-05-04\cr
+Version: \tab 0.21-6\cr
+Date: \tab 2013-12-10\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -41,7 +41,8 @@ Currently, this package only supports additive risk models.
 # See vignette for examples including details on the example
 # considered below
 
-results<-sim.snp.expsurv.power(GHR=1.25, B=0, n=500, raf=0.1, erate=0.75, pilm=0.5, lm=1, model="additive", test="additive", alpha=0.05)
+results<-sim.snp.expsurv.power(GHR=1.25, B=0, n=500, raf=0.1, erate=0.75, pilm=0.5, 
+                               lm=1, model="additive", test="additive", alpha=0.05)
 results[,c("n","erate","alpha","pow0")]
 
 
@@ -49,7 +50,8 @@ GHRs<-seq(1.05,1.5,by=0.05)
 ns<-c(100,500,700)
 rafs<-c(0.1,0.3,0.5)
 erates<-c(0.5,0.7,0.9)
-res<-survSNP.power.table(GHRs,ns,rafs,erates,pilm=0.5,lm=1,model="additive",test="additive",alpha=0.05)
+res<-survSNP.power.table(GHRs,ns,rafs,erates,pilm=0.5,lm=1,model="additive",
+                         test="additive",alpha=0.05)
 
 # Create key for illustration
 KEY=paste("q=",levels(factor(res$raf)),sep="")

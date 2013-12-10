@@ -9,7 +9,8 @@ This function calculates asymptotic and empirical power for SNP
 association studies
 }
 \usage{
-sim.snp.expsurv.power(GHR, B, n, raf, erate, pilm, lm, model, test, alpha, exactvar = FALSE, interval = c(0, 10), rootint = c(0.1, 200))
+sim.snp.expsurv.power(GHR, B, n, raf, erate, pilm, lm, model, test, alpha, 
+                      exactvar = FALSE, interval = c(0, 10), rootint = c(0.1, 200))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -153,7 +154,8 @@ Kouros Owzar, Zhiguo Li, Nancy Cox, Sin-Ho Jung and Chanhee Yi
 # See vignette for examples including details on the example
 # considered below
 
-results<-sim.snp.expsurv.power(GHR=1.25, B=0, n=500, raf=0.1, erate=0.75, pilm=0.5, lm=1, model="additive", test="additive", alpha=0.05)
+results<-sim.snp.expsurv.power(GHR=1.25, B=0, n=500, raf=0.1, erate=0.75, pilm=0.5, 
+                               lm=1, model="additive", test="additive", alpha=0.05)
 results[,c("n","erate","alpha","pow0")]
 }
 
