@@ -10,6 +10,7 @@ function(GHR,B,n,raf,erate,pilm,lm,model,test,alpha,exactvar=FALSE,interval=c(0,
       {
         z=NA
         print("Model not defined")
+        return(NA)
       }
     asypval=asypow(n,log(GHR),a=0,b,lam[1],raf,gtprev,alpha,z,exactvar)
     if(B>0)

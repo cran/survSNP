@@ -15,8 +15,8 @@ Studies with Censored Time-to-Event Outcomes
 \tabular{ll}{
 Package: \tab survSNP\cr
 Type: \tab Package\cr
-Version: \tab 0.21-6\cr
-Date: \tab 2013-12-10\cr
+Version: \tab 0.21-7\cr
+Date: \tab 2013-12-12\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
