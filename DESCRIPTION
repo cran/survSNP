@@ -1,9 +1,8 @@
 Package: survSNP
 Type: Package
-Title: Power and Sample Size Calculations for SNP Association Studies
-        with Censored Time to Event Outcomes
-Version: 0.21-7
-Date: 2013-12-12
+Title: Power Calculations for SNP Studies with Censored Outcomes
+Version: 0.23.2
+Date: 2015-01-17
 Author: Kouros Owzar, Zhiguo Li, Nancy Cox, Sin-Ho Jung and Chanhee Yi
 Maintainer: Kouros Owzar <owzar001@duke.edu>
 Description: This package can be used to conduct asymptotic and empirical power and sample size calculations for SNP association studies with right censored time to event outcomes
@@ -16,7 +15,7 @@ URL: https://bitbucket.org/kowzar/survsnp
 License: GPL-3
 LazyLoad: yes
 VignetteBuilder: knitr
-Packaged: 2014-01-06 20:22:55 UTC; cy77
+Packaged: 2015-01-18 05:04:21 UTC; owzar001
 NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2014-01-06 22:08:50
+Date/Publication: 2015-01-18 06:50:29

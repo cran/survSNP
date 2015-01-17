@@ -1,9 +1,11 @@
-## This scipt is a modification of the cleanup file
-## from the RcppGSL package (version 0.1.1)
+## This script was copied from
+## from the RcppGSL package (version 0.2.3.1)
 ## http://cran.r-project.org/web/packages/RcppGSL/
 ## The copyright information for the RcppGSL package is as follows:
 ## Copyright (C) 2010 Romain Francois and Dirk Eddelbuettel
 ## Licensed under GNU GPL 2 or later
+
+
 
 #!/bin/sh
 

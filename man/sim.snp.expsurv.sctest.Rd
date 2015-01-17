@@ -9,7 +9,7 @@ Simulation of Cox Score Statistic
   score statistic under a specified genetic risk model
 }
 \usage{
-sim.snp.expsurv.sctest(n, gtprev, lam, a, b, test, diag = FALSE)
+sim.snp.expsurv.sctest(n, gtprev, lam, a, b, ztest, diag = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -29,7 +29,7 @@ sim.snp.expsurv.sctest(n, gtprev, lam, a, b, test, diag = FALSE)
   \item{b}{
     Upper bound for the uniform censoring bound
   }
-  \item{test}{
+  \item{ztest}{
     Assumed genetic model
   }
   \item{diag}{

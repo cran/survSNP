@@ -10,7 +10,7 @@
   the conditional survival functions
 }
 \usage{
-surv.exp.gt.model(pilm, lm, gtprev, GRR, model, interval)
+surv.exp.gt.model(pilm, lm, gtprev, GRR, zmodel, interval)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -26,7 +26,7 @@ surv.exp.gt.model(pilm, lm, gtprev, GRR, model, interval)
   \item{GRR}{
     Genotype Hazard Ratio
   }
-  \item{model}{
+  \item{zmodel}{
     Genetic Risk Model (choices are "additive", "recessive" or
     "dominant")
   }

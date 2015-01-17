@@ -3,8 +3,7 @@
 \alias{survSNP}
 \docType{package}
 \title{
-Power and Sample Size Calculations for SNP Association
-Studies with Censored Time-to-Event Outcomes
+Power Calculations for SNP Studies with Censored Outcomes
 }
 \description{
   This package facilitates asymptotic and empirical
@@ -15,8 +14,8 @@ Studies with Censored Time-to-Event Outcomes
 \tabular{ll}{
 Package: \tab survSNP\cr
 Type: \tab Package\cr
-Version: \tab 0.21-7\cr
-Date: \tab 2013-12-12\cr
+Version: \tab 0.23.2\cr
+Date: \tab 2015-01-17\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
