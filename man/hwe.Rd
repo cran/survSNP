@@ -33,7 +33,7 @@ A vector of length three relative genotypic frequencies.
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
-  \url{http://biostats.bepress.com/dukebiostat/papers/art18/}
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/gepi.21645/abstract}
 }
 
 \author{

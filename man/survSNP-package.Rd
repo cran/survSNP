@@ -6,16 +6,17 @@
 Power Calculations for SNP Studies with Censored Outcomes
 }
 \description{
-  This package facilitates asymptotic and empirical
-  power and sample size calculations for SNP
-  association studies with censored time-to-event outcomes
+This package can be used to conduct asymptotic and
+empirical power and sample size calculations for Single-nucleotide
+Polymorphism (SNP) association studies with right censored time to
+event outcomes.
 }
 \details{
 \tabular{ll}{
 Package: \tab survSNP\cr
 Type: \tab Package\cr
-Version: \tab 0.23.2\cr
-Date: \tab 2015-01-17\cr
+Version: \tab 0.24\cr
+Date: \tab 2016-06-29\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -34,7 +35,7 @@ Currently, this package only supports additive risk models.
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
-  \url{http://biostats.bepress.com/dukebiostat/papers/art18/}
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/gepi.21645/abstract}
 }
 \examples{
 # See vignette for examples including details on the example

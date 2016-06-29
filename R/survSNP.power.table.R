@@ -1,5 +1,5 @@
 survSNP.power.table <-
-function(GHRs,ns,rafs,erates,pilm,lm,model,test,alpha,exactvar=FALSE,B=0,para=FALSE)
+function(GHRs,ns,rafs,erates,pilm,lm,model,test,alpha,exactvar=FALSE,B=0)
   {
     GHR<-raf<-n<-erate<-NULL
     res=foreach(GHR=GHRs,.combine=rbind)%:%

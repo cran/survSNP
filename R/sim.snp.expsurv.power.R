@@ -1,9 +1,6 @@
 sim.snp.expsurv.power <-
 function(GHR,B,n,raf,erate,pilm,lm,model,test,alpha,exactvar=FALSE,interval=c(0,10),rootint=c(0.1,200)) {
-    if(class(model)=="numeric" && length(model)==3) {
-        zmod=model
-    }
-    else if(model=="additive") {
+    if(model=="additive") {
         zmod=c(0,1,2)
     }
     else if(model=="recessive") {
@@ -13,17 +10,10 @@ function(GHR,B,n,raf,erate,pilm,lm,model,test,alpha,exactvar=FALSE,interval=c(0,
         zmod=c(0,1,1)
     }
     else {
-        print("Model not defined")
-        return(NA)
+        stop("Model not defined")
     }
     
-    if(class(test)=="numeric" && length(test)==3) {
-        ztest=test
-    }
-    else if(test=="genotype") {
-        ztest=c(0,1,2)
-    }
-    else if(test=="additive") {
+    if(test=="additive") {
         ztest=c(0,1,2)
     }
     else if(test=="recessive") {
@@ -33,9 +23,9 @@ function(GHR,B,n,raf,erate,pilm,lm,model,test,alpha,exactvar=FALSE,interval=c(0,
         ztest=c(0,1,1)
     }
     else {
-        print("Test not defined")
-        return(NA)
+        stop("Test not defined")
     }
+    if(model!="additive") message('Note: For asymptotic calculations, only the "additive" model should be used.')
     
     gtprev=hwe(raf)
     lam=surv.exp.gt.model(pilm,lm,gtprev,GHR,zmod,interval)

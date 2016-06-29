@@ -1,6 +1,3 @@
-## ----B,echo=FALSE--------------------------------------------------------
-B=10000
-
 ## ----loadpkg-------------------------------------------------------------
 library(survSNP)
 
@@ -15,9 +12,9 @@ res1[,c("n","GHR","erate","raf","B","alpha","pow0","pow","powB")]
 
 ## ----ex1b----------------------------------------------------------------
 set.seed(123)
-res1b<-sim.snp.expsurv.power(1.25, n=500, raf=0.1, erate=0.75, 
+res1b<-sim.snp.expsurv.power(1.25, n=500, raf=0.25, erate=0.75, 
                              pilm=0.5, lm=1, 
-                             exactvar=TRUE,B=B,
+                             exactvar=TRUE,B=10000,
                              model="additive",test="additive",alpha=0.05)
 
 
@@ -39,15 +36,6 @@ res2<-survSNP.power.table(GHRs,ns,rafs,erates,
 ## ----printex2------------------------------------------------------------
 res2[1:3,c("n","GHR","erate","raf","pow0","pow","powB")]
 
-## ----res3----------------------------------------------------------------
-cols<-c("n","GHR","erate","raf","pow0")
-res3<-subset(res2,GHR==1.25&raf==0.3&n==500,select=cols)
-res3
-
-## ----tab,results='asis'--------------------------------------------------
-print(xtable(res3,digits=c(0,0,1,1,1,3)),
-      include.rownames=FALSE,floating=FALSE)
-
 ## ----ex1plot-------------------------------------------------------------
 KEY=paste("q=",levels(factor(res2$raf)),sep="")
 KEY<-list(lines=list(col=1:length(KEY),lty=1:length(KEY)),
@@ -65,6 +53,15 @@ print(xyplot(pow0~GHR|factor(erate),group=factor(raf),
              key=KEY,
              xlab="Genotype Hazard Ratio",ylab="Power",
              sub=paste("n=",ns[1],", alpha=",round(unique(res2$alpha),2))))
+
+## ----res3----------------------------------------------------------------
+cols<-c("n","GHR","erate","raf","pow0")
+res3<-subset(res2,GHR==1.25&raf==0.3&n==500,select=cols)
+res3
+
+## ----tab,results='asis'--------------------------------------------------
+print(xtable(res3,digits=c(0,0,1,1,1,3)),
+      include.rownames=FALSE,floating=FALSE)
 
 ## ----sessioninfo,results='asis',echo=FALSE-------------------------------
 print(toLatex(sessionInfo()))

@@ -7,11 +7,11 @@
 \description{
   This function produces a table with the resulting empirical and
   asymptotic power over a given range of Genotype Hazard Ratios,
-  sample sizes, em
+  relative allelic frequencies, sample sizes, and event rates.
 }
 \usage{
 survSNP.power.table(GHRs, ns, rafs, erates, pilm, lm, model, test, alpha, 
-                    exactvar = FALSE, B = 0, para = FALSE)
+                    exactvar = FALSE, B = 0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -55,10 +55,6 @@ survSNP.power.table(GHRs, ns, rafs, erates, pilm, lm, model, test, alpha,
     calculations are desired)
 
 }
-  \item{para}{
-    Indicator (TRUE/FALSE) to use a parallel backend for foreach. 
-    
-}
 }
 \details{
   This version only supports additive models.
@@ -71,7 +67,7 @@ survSNP.power.table(GHRs, ns, rafs, erates, pilm, lm, model, test, alpha,
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
- \url{http://biostats.bepress.com/dukebiostat/papers/art18/}
+ \url{http://onlinelibrary.wiley.com/doi/10.1002/gepi.21645/abstract}
 
 }
 \author{

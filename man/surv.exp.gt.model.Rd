@@ -36,7 +36,7 @@ surv.exp.gt.model(pilm, lm, gtprev, GRR, zmodel, interval)
 }
 \details{
   Determines the time to event distributions in the three component
-  mixture model discussed in the refernce below.
+  mixture model discussed in the reference below.
   It is not intended to be called directly by the user.
   To conduct power calculations, use \link{sim.snp.expsurv.power}
   or the convenience wrapper function \link{survSNP.power.table}.
@@ -48,7 +48,7 @@ A vector of length three containing the exponential hazard rates
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
-  \url{http://biostats.bepress.com/dukebiostat/papers/art18/}
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/gepi.21645/abstract}
 }
 \author{
 Kouros Owzar, Zhiguo Li, Nancy Cox, Sin-Ho Jung and Chanhee Yi
