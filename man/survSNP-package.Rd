@@ -35,7 +35,7 @@ Currently, this package only supports additive risk models.
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
-  \url{http://onlinelibrary.wiley.com/doi/10.1002/gepi.21645/abstract}
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/gepi.21645}
 }
 \examples{
 # See vignette for examples including details on the example

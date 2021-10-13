@@ -7,7 +7,7 @@
 
 
 # The version set here will propagate to other files from here
-AC_INIT([RcppGSL], 0.2.3)
+AC_INIT([RcppGSL],[0.2.3])
 
 # Checks for common programs using default macros
 AC_PROG_CC
@@ -29,5 +29,6 @@ fi
 AC_SUBST(GSL_CFLAGS)
 AC_SUBST(GSL_LIBS)
 
-AC_OUTPUT(src/Makevars)
+AC_CONFIG_FILES([src/Makevars])
+AC_OUTPUT
 

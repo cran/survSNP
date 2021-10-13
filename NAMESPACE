@@ -1,4 +1,4 @@
-useDynLib(survSNP)
-exportPattern("^[[:alpha:]]+")
-import(xtable, foreach, survival,Rcpp,lattice)
+useDynLib(survSNP, .registration = TRUE)
+export(asypow,censbnd,hwe,sim.snp.expsurv.power,sim.snp.expsurv.sctest,surv.exp.gt.model,survSNP.power.table)
+import(xtable, foreach, survival, Rcpp, lattice)
 importFrom("stats", "rexp", "rmultinom", "runif", "uniroot")

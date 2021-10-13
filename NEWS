@@ -1,3 +1,9 @@
+survSNP v0.25 (Release date: 2021-10-08)
+=============
+* Corrected Warning: "AC_OUTPUT should be used without arguments"
+* Updated reference URLs
+* Updated maintainer email address
+
 survSNP v0.24 (Release date: 2016-06-29)
 =============
 * Argument "para" removed from sim.snp.expsurv.power(). [Parallel execution was never implemented].
