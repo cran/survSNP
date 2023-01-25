@@ -15,8 +15,8 @@ event outcomes.
 \tabular{ll}{
 Package: \tab survSNP\cr
 Type: \tab Package\cr
-Version: \tab 0.24\cr
-Date: \tab 2016-06-29\cr
+Version: \tab 0.26\cr
+Date: \tab 2023-01-20\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -35,7 +35,7 @@ Currently, this package only supports additive risk models.
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/gepi.21645}
+  \url{https://onlinelibrary.wiley.com/doi/full/10.1002/gepi.21645}
 }
 \examples{
 # See vignette for examples including details on the example

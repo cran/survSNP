@@ -1,3 +1,8 @@
+survSNP v0.26 (Release date: 2023-01-20)
+=============
+* Copied updated configure and configure.ac files from RcppGSL v0.3.13 to correct gcc issue reported by CRAN
+* Updated citation URLs which were redirecting
+
 survSNP v0.25 (Release date: 2021-10-08)
 =============
 * Corrected Warning: "AC_OUTPUT should be used without arguments"

@@ -48,7 +48,7 @@ A vector of length three containing the exponential hazard rates
   Kouros Owzar, Zhiguo Li, Nancy Cox and Sin-Ho Jung.
   Power and Sample Size Calculations for SNP Association
   Studies with Censored Time-to-Event Outcomes.
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/gepi.21645}
+  \url{https://onlinelibrary.wiley.com/doi/full/10.1002/gepi.21645}
 }
 \author{
 Kouros Owzar, Zhiguo Li, Nancy Cox, Sin-Ho Jung and Chanhee Yi
